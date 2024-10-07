@@ -376,6 +376,8 @@ class _DaftarProdukPageState extends State<DaftarProdukPage> {
   }
 }
 ```
+![Tampilan Daftar Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/daftar_produk.png)
+b.) SS PopUp Berhasil
 # 4. Detail Produk
 a) Code form Penjelasan + Screenshoot
 Berikut untuk soursode dan penjelasannya:
