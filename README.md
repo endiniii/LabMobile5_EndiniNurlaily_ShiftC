@@ -1,7 +1,7 @@
 # LabMobile5_EndiniNurlaily_ShiftC
 
 # 1. Proses registrasi
-a) Code Penjelasan + Screenshoot
+a) Code form Penjelasan + Screenshoot
 Berikut untuk soursode dan penjelasannya:
 ```dart
 import 'package:flutter/material.dart';
@@ -158,3 +158,5 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
     });
   }
 }
+```dart
+![Tampilan Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_registrasi.png)
