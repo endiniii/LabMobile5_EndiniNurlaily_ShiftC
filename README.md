@@ -158,5 +158,5 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
     });
   }
 }
-```dart
+```
 ![Tampilan Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_registrasi.png)
