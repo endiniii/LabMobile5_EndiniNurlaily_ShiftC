@@ -376,7 +376,7 @@ class _DaftarProdukPageState extends State<DaftarProdukPage> {
   }
 }
 ```
-![Tampilan Daftar Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/daftar_produk.png)
+![Tampilan Daftar Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_daftar_produk.png)
 b.) SS PopUp Berhasil![Tampilan Daftar Produk Berhasil](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/daftar_produk_berhasil.png)
 # 4. Detail Produk
 a) Code form Penjelasan + Screenshoot
@@ -421,3 +421,90 @@ class DetailProdukPage extends StatelessWidget {
 ![Tampilan Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk.png)
 b.) SS PopUp Berhasil
 ![Tampilan pop up Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produl_berhasil.png)
+# 5. Konfirmasi Hapus Produk (Delete)
+a) Code form Penjelasan + Screenshoot
+Berikut untuk soursode dan penjelasannya:
+```dart
+import 'package:flutter/material.dart';
+import 'package:tokokita/bloc/produk_bloc.dart';
+import 'package:tokokita/widget/item_produk.dart';
+
+class DaftarProdukPage extends StatefulWidget {
+  const DaftarProdukPage({Key? key}) : super(key: key);
+
+  @override
+  _DaftarProdukPageState createState() => _DaftarProdukPageState();
+}
+
+class _DaftarProdukPageState extends State<DaftarProdukPage> {
+  late Future<List<Produk>> futureProduks;
+
+  @override
+  void initState() {
+    super.initState();
+    futureProduks = ProdukBloc.getProduks(); // Mengambil data produk
+  }
+
+  void _confirmDelete(Produk produk) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Konfirmasi Hapus"),
+          content: Text("Apakah Anda yakin ingin menghapus ${produk.namaProduk}?"),
+          actions: <Widget>[
+            TextButton(
+              child: Text("Batal"),
+              onPressed: () {
+                Navigator.of(context).pop(); // Menutup dialog
+              },
+            ),
+            TextButton(
+              child: Text("Hapus"),
+              onPressed: () {
+                // Panggil fungsi hapus produk
+                ProdukBloc.deleteProduk(produk.kodeProduk);
+                setState(() {
+                  futureProduks = ProdukBloc.getProduks(); // Refresh daftar produk
+                });
+                Navigator.of(context).pop(); // Menutup dialog
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Daftar Produk"),
+      ),
+      body: FutureBuilder<List<Produk>>(
+        future: futureProduks,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          } else {
+            final produkList = snapshot.data ?? [];
+            return ListView.builder(
+              itemCount: produkList.length,
+              itemBuilder: (context, index) {
+                return ItemProduk(
+                  produk: produkList[index],
+                  onDelete: () => _confirmDelete(produkList[index]), // Opsi hapus
+                );
+              },
+            );
+          }
+        },
+      ),
+    );
+  }
+}
+```
+![Tampilan Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk.png)
