@@ -508,3 +508,5 @@ class _DaftarProdukPageState extends State<DaftarProdukPage> {
 }
 ```
 ![Tampilan Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk.png)
+b.) SS PopUp Berhasil
+![Tampilan pop up Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/delete.png)
