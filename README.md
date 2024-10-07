@@ -3,6 +3,7 @@
 # 1. Proses registrasi
 a) Code form Penjelasan + Screenshoot
 Berikut untuk soursode dan penjelasannya:
+Harus menginputkan Nama, Email, Password, dan konfirmasi Password
 ```dart
 import 'package:flutter/material.dart';
 import 'package:tokokita/bloc/registrasi_bloc.dart';
@@ -163,6 +164,7 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
 b.) SS PopUp Berhasil
 ![Tampilan pop up Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/register_berhasil.png)
 # 2. Proses Login
+Harus menginputkan Email dan Password yang sudah diregis
 a) Code form Penjelasan + Screenshoot
 Berikut untuk soursode dan penjelasannya:
 ```dart
