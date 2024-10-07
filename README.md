@@ -159,9 +159,11 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
   }
 }
 ```
-![Tampilan Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_register.png)
+![Tampilan Registrasi]
+(https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_register.png)
 b.) SS PopUp Berhasil
-![Tampilan pop up Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/register_berhasil.png)
+![Tampilan pop up Registrasi]
+(https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/register_berhasil.png)
 # 2. Proses Login
 a) Code form Penjelasan + Screenshoot
 Berikut untuk soursode dan penjelasannya:
@@ -312,7 +314,8 @@ class _LoginPageState extends State<LoginPage> {
 ```
 ![Tampilan Login](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_login.png)
 b.) SS PopUp Berhasil
-![Tampilan pop up Login](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/login_berhasil.png)
+![Tampilan pop up Login]
+(https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/login_berhasil.png)
 # 3. Daftar Produk
 a) Code form Penjelasan + Screenshoot
 Berikut untuk soursode dan penjelasannya:
@@ -376,7 +379,8 @@ class _DaftarProdukPageState extends State<DaftarProdukPage> {
   }
 }
 ```
-![Tampilan Daftar Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/daftar_produk.png)
+![Tampilan Daftar Produk]
+(https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/daftar_produk.png)
 b.) SS PopUp Berhasil
 # 4. Detail Produk
 a) Code form Penjelasan + Screenshoot
