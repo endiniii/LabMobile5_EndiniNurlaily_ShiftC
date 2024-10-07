@@ -412,12 +412,12 @@ class DetailProdukPage extends StatelessWidget {
             const SizedBox(height: 10),
             Text("Deskripsi: ${produk.deskripsiProduk}"),
           ],
-```
-![Tampilan Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk.png)
-b.) SS PopUp Berhasil
-![Tampilan pop up Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk_berhasil.png)
         ),
       ),
     );
   }
 }
+```
+![Tampilan Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk.png)
+b.) SS PopUp Berhasil
+![Tampilan pop up Detail Produk](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/detail_produk_berhasil.png)
