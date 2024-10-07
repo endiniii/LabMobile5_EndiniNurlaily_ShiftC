@@ -160,3 +160,5 @@ class _RegistrasiPageState extends State<RegistrasiPage> {
 }
 ```
 ![Tampilan Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/tampilan_register.png)
+b.) SS PopUp Berhasil
+![Tampilan pop up Registrasi](https://raw.githubusercontent.com/endiniii/LabMobile5_EndiniNurlaily_ShiftC/main/register_berhasil.png)
