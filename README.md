@@ -376,3 +376,42 @@ class _DaftarProdukPageState extends State<DaftarProdukPage> {
   }
 }
 ```
+# 4. Detail Produk
+a) Code form Penjelasan + Screenshoot
+Berikut untuk soursode dan penjelasannya:
+```dart
+import 'package:flutter/material.dart';
+import 'package:tokokita/model/produk.dart';
+
+class DetailProdukPage extends StatelessWidget {
+  final Produk produk;
+
+  const DetailProdukPage({Key? key, required this.produk}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(produk.namaProduk),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              produk.namaProduk,
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            Text("Kode Produk: ${produk.kodeProduk}"),
+            const SizedBox(height: 10),
+            Text("Harga: \$${produk.hargaProduk}"),
+            const SizedBox(height: 10),
+            Text("Deskripsi: ${produk.deskripsiProduk}"),
+          ],
+        ),
+      ),
+    );
+  }
+}
